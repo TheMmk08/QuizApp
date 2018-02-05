@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--HEADER-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="Who Is The Scientist?"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <!--Question 1-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:text="  Who discovered penicillin ?"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--Question 1 answers-->
+            <LinearLayout
+                android:id="@+id/txt_q1_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_q1"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/txt_q1_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alexander Fleming"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/txt_q1_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aryabhata"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/txt_q1_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Levi Strauss"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/txt_q1_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kopernik "
+                        android:textColor="@android:color/white" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!--Img of Q1-->
+            <ImageView
+                android:id="@+id/img_q1"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/txt_q1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/txt_q1_answers"
+                android:scaleType="fitXY"
+                android:src="@mipmap/who"
+
+
+                />
+        </RelativeLayout>
+
+        <!--Question 2-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:text="  Who discovered the change in radiation-dependent atomic number ?"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--Question 2 answers-->
+            <LinearLayout
+                android:id="@+id/txt_q2_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_q2"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/txt_q2_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Andreas Vesalius"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/txt_q2_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ernest Rutherford"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/txt_q2_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peter Henlein"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/txt_q2_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Georg Ohm "
+                        android:textColor="@android:color/white" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!--Img of Q2-->
+            <ImageView
+                android:id="@+id/img_q2"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/txt_q2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/txt_q2_answers"
+                android:scaleType="fitXY"
+                android:src="@mipmap/who" />
+        </RelativeLayout>
+
+        <!--Question 3-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:text="  What branches of science did Louis Pasteur deal with?"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--Question 3 answers-->
+            <LinearLayout
+                android:id="@+id/txt_q3_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_q3"
+                android:layout_toRightOf="@id/img_q3"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <CheckBox
+                    android:id="@+id/txt_q3_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physics"
+                    android:textColor="@android:color/white" />
+
+                <CheckBox
+                    android:id="@+id/txt_q3_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Microbiology"
+                    android:textColor="@android:color/white" />
+
+                <CheckBox
+                    android:id="@+id/txt_q3_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Astronomy"
+                    android:textColor="@android:color/white" />
+
+                <CheckBox
+                    android:id="@+id/txt_q3_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chemistry "
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+            <!--Img of Q3-->
+            <ImageView
+                android:id="@+id/img_q3"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/txt_q3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/pasteur" />
+        </RelativeLayout>
+
+        <!--Question 4-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:text="  What branches of science did Edsger Dijkstra deal with?"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--Question 4 answers-->
+            <LinearLayout
+                android:id="@+id/txt_q4_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_q4"
+                android:layout_toRightOf="@id/img_q4"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <CheckBox
+                    android:id="@+id/txt_q4_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Math"
+                    android:textColor="@android:color/white" />
+
+                <CheckBox
+                    android:id="@+id/txt_q4_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biology"
+                    android:textColor="@android:color/white" />
+
+                <CheckBox
+                    android:id="@+id/txt_q4_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science"
+                    android:textColor="@android:color/white" />
+
+                <CheckBox
+                    android:id="@+id/txt_q4_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Philosophy"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+            <!--Img of Q4-->
+            <ImageView
+                android:id="@+id/img_q4"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/txt_q4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/dijkstra" />
+        </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <!--Submit Answer Button-->
+       <Button
+           android:id="@+id/btn_submit"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:background="@android:color/holo_purple"
+           android:text="  SUBMIT  "
+           android:textColor="@android:color/black"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:onClick="SubmitAnswers"/>
+       <!--Reset Answer Button-->
+       <Button
+           android:id="@+id/btn_reset"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:background="@android:color/holo_purple"
+           android:text="  RESET  "
+           android:textColor="@android:color/black"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:onClick="ResetQuiz"/>
+
+
+   </LinearLayout>
+       <!--Score Text-->
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+           android:layout_margin="20dp"
+            android:text=" "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--Win Or Lose Text-->
+        <TextView
+            android:id="@+id/state"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:layout_margin="20dp"
+            android:text=" "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
